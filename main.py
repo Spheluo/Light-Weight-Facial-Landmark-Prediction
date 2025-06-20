@@ -53,8 +53,8 @@ def train_interface():
 
     # Check myDatasets.py 
     train_set, val_set =  get_train_val_set(train_root='data/synthetics_train/', val_root='data/aflw_val/')    
-    train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=False, num_workers= 0)
-    val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False, num_workers= 0)
+    train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=False, num_workers=2)
+    val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False, num_workers=2)
     
     # define your loss function and optimizer to unpdate the model's parameters.
     

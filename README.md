@@ -104,11 +104,14 @@ When using heatmaps as model output, the original landmark coordinates (2D) must
 - Maximum value is 100
 - Minimum value is 0
 
-The result is a **localized heatmap** per landmark.
+The result is a **localized heatmap** per landmark.  
+![image](https://github.com/user-attachments/assets/86b37f98-5c05-4d57-a900-2775e20c06d2)
 
 During inference, these heatmaps are converted back into 2D coordinates using a decoding function that extracts the maximum activation point for each channel.
 
-## Experiments
+## Experiment results
+The predicted facial landmarks were ploted on the following example image:  
+![image00002](https://github.com/user-attachments/assets/c44bc192-10c7-4214-8106-cb51b7d35d56)
 
 | Experiment | Training Setup | Validation Loss |
 |-----------|----------------|------------------|
